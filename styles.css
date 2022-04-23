@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Akshar:wght@600&display=swap');
+/*Profe no estoy respetando la especificidad porque como son varias paginas quiero tener todo ordenado*/
+
+/*Propiedades globales*/
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(245, 245, 245);
+    margin : 0px;
+    font-family: 'Akshar', sans-serif;
+    font-size: 1.5vmin;
+}
+
+a{
+    text-decoration: none;
+    color: azure;
+}
+
+h1, h2{
+    margin: 0px;
+}
+.lugarImagen{
+    background-color: rgb(225, 225, 225);
+    width: 100%;
+    height: 25vmin;
+    display: inline-block;
+}
+.imagen{
+    width: 38vmin;
+    height: 20vmin;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.imagen2{
+    width: 28vmin;
+    height: 36.5vmin;
+}
+
+/*Header global*/
+
+header{
+    background-color: rgb(255,255,255);
+    font-size: 2.5vmin;
+    text-align: center;
+}
+
+header .NombrePagina{
+    display: block;
+    color:black;
+    padding-top: 2vmin;
+    padding-bottom: 2vmin;
+    font-size: 4.5vmin;
+}
+header .navegacion{
+    background-color: rgb(15,15,15);
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+header .navegacion li{
+    display: inline-block;
+    padding: 2vmin 5.2vmin 2vmin 5.2vmin;
+}
+
+header .contenedorMenuDesplegableNoticias{
+    display:none;
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    margin: 2vmin 0vmin 0px -5.2vmin;
+    padding: 0px;
+    z-index: 100;
+}
+header .contenedorMenuDesplegableNoticias li{
+    display: block;
+    padding: 2.35vmin;
+    transition: 0.5s;
+}
+header li:hover .contenedorMenuDesplegableNoticias{
+    display:block;
+}
+
+header .navegacion li:hover{
+    background-color: rgb(255, 199, 0);
+    
+}
+header .navegacion li:hover a{
+    color:black;
+}
+
+/*Main global*/
+main{
+    margin: 2vmin 1vmin;
+}
+
+/*Footer global*/
+footer{
+    text-align: center;
+    background-color: black;
+    font-size: 2vmin;
+}
+
+
+/*Main pagina inicio*/
+main .Contenedor_noticias{
+    margin: 0px 1vmin 0px 1vmin;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1vmin;
+}
+main .noticia{
+    color: black;
+    background-color: white;
+    padding: 1vmin;
+    border: solid 1px rgb(200,200,200);
+    border-radius: 0.5vmin;
+    height: 30.7vmin;
+    overflow: hidden;
+    transition: 0.5s;
+}
+main .texto_noticia{
+    display: inline-block;
+    margin: 1vmin 0px 1vmin 0px;
+}
+main .Contenedor_titulo_noticia{
+    width: 100%;
+    height: 3vmin;
+    background-color: black;
+    margin-top: 0px;
+    font-size: 2vmin;
+    color: white;
+    padding-left: 1vmin;
+}
+
+main .noticia:hover{
+    height: 100%;
+    border: solid 1px rgb(255, 199, 0);
+}
+
+/*Main pagina objetivos*/
+
+main .tituloObjetivos{
+    background: black;
+    color: white;
+    display: inline-block;
+    font-size: 2.5vmin;
+    text-align: center;
+    width: 100%;
+    padding: 2.5vmin 0vmin;
+}
+
+main .contenedorObjetivos ol{
+    padding-left: 1vmin;
+    margin: 0px;
+    padding-top: 2vmin;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1vmin;
+}
+
+main .contenedorObjetivos ol li{
+    background-color: white;
+    font-size: 2vmin;
+    margin: 0vmin auto 1vmin auto;
+    border-radius: 0.5vmin;
+    padding: 1.4vmin;
+    width: 90%;
+    color: rgb(255, 199, 0);
+    font-size: 3.5vmin;
+    border: solid 1px rgb(200,200,200);
+    transition: 0.5s;
+
+}
+
+main .contenedorObjetivos ol li span{
+    font-size: 1.7vmin;
+    color: black;
+    display: block;
+}
+
+main .contenedorObjetivos ol li:hover{
+    border: 0.4vmin solid rgb(255, 199, 0);
+    box-shadow: 4px 4px rgb(65,65,65);
+
+}
+
+/*Main pagina quienes somos*/
+
+main .contenedorSeccionEquipo{
+    text-align: center;
+    padding: 1vmin;
+    font-size: 2.5vmin;
+}
+
+main .contenedorPersonaEquipo{
+    background-color: rgb(255,255,255);
+    border-radius: 0.5vmin;
+    position: relative;
+    height:42vmin;
+    overflow: hidden;
+    border:2px solid rgb(200,200,200);
+    transition: 0.5s;
+}
+
+main .nombrePersonaDeEquipo{
+    display: block;
+    background-color: rgb(225,225,225);
+    padding:0.5vmin;
+    color: black;
+    width: 100%;
+}
+
+main .profesionPersonaDeEquipo{
+    color: white;
+    display: block;
+    font-size: 1.5vmin;
+    background-color: black;
+}
+
+main .contenedorEquipo{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1vmin;
+}
+
+main .contenedorSeccionEquipo h2{
+    font-size: 6vmin;
+}
+
+main .contenedorDescripcionPersonaEquipo p{
+    display: block;
+    font-size: 2.3vmin;
+    margin: 1.4vmin 0px;
+}
+main .contenedorDescripcionPersonaEquipo{
+    background-color: rgb(255, 255, 255,0.91);
+    color: black;
+    font-size: 2.8vmin;
+}
+
+main .contenedorDescripcionCompañia:hover{
+    background-color: rgb(0, 0, 0,0.8);
+}
+
+main .contenedorPersonaEquipo:hover{
+    border: 2px solid rgb(255, 199, 0);
+}
+
+main .contenedorPersonaEquipo:hover .contenedorDescripcionPersonaEquipo{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+}
+
+
+/*Pagina noticias*/
+
+main .contenedorSeccionesNoticias{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+main .seccion{
+    border:2px solid rgb(200,200,200);
+    background-color: rgb(255,255,255);
+    height: 40vh;
+    text-align: center;
+    padding-top: 8vmin;
+}
+main .seccion h2{
+    font-size: 8vmin;
+    transition: 1s;
+}
+main .seccion a{
+    color:black;
+    transition: 1s;
+    font-size: 2vmin;
+}
+main .seccion:hover{
+    background-color:black;
+    border: 2px solid rgb(255, 199, 0);
+    
+}
+main .seccion:hover h2{
+    color:white;
+    margin-top: -4vmin;
+    
+}
+main .seccion:hover a{
+    color:rgb(255, 199, 0);
+    
+}
+main .seccion a:hover{
+    font-size: 2.7vmin;
+}
+
+
+
+
