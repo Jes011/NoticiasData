@@ -17,7 +17,11 @@ a{
     color: azure;
 }
 
-h1, h2{
+h1, h2, h3{
+    margin: 0px;
+}
+
+p{
     margin: 0px;
 }
 .lugarImagen{
@@ -36,6 +40,10 @@ h1, h2{
 .imagen2{
     width: 28vmin;
     height: 36.5vmin;
+}
+.lugarImagen2{
+    height: 100%;
+    background-color: rgb(225, 225, 225);
 }
 
 /*Header global*/
@@ -74,7 +82,7 @@ header .contenedorMenuDesplegableNoticias{
 }
 header .contenedorMenuDesplegableNoticias li{
     display: block;
-    padding: 2.35vmin;
+    padding: 3.3vmin;
     transition: 0.5s;
 }
 header li:hover .contenedorMenuDesplegableNoticias{
@@ -103,6 +111,48 @@ footer{
 
 
 /*Main pagina inicio*/
+
+main .contenedorNoticiaPrincipal{
+    background-color:white;
+    width:100%;
+    border: solid 2px rgb(200,200,200);
+    position: relative;
+    height: 40vmin;
+    padding: 1vmin;
+    margin-bottom:2vmin;
+    display: grid;
+    grid-template-columns: 66vmin 1fr;
+    grid-gap:1vmin;
+    overflow: hidden;
+    transition: 1s;
+}
+
+main .contenedorDescripcionNoticiaPrincipal{
+    font-size: 3.5vmin;
+}
+
+main .contenedorDescripcionNoticiaParrafo{
+    height: 18vmin;
+    overflow:auto;
+}
+
+main .contenedorDescipcionNoticiaTitulo{
+    height: 6.6vmin;
+    overflow-y: auto;
+    margin-bottom: 2vmin;
+}
+
+main .contenedorDescripcionNoticiaParrafo p{
+    font-size: 2vmin;
+    display: block;
+}
+
+main .contenedorDescripcionNoticiaPrincipal a{
+    font-size: 1.8vmin;
+    color: black;
+    transition: 1s;
+}
+
 main .Contenedor_noticias{
     margin: 0px 1vmin 0px 1vmin;
     display: grid;
@@ -139,7 +189,6 @@ main .noticia:hover{
 }
 
 /*Main pagina objetivos*/
-
 main .tituloObjetivos{
     background: black;
     color: white;
@@ -153,7 +202,7 @@ main .tituloObjetivos{
 main .contenedorObjetivos ol{
     padding-left: 1vmin;
     margin: 0px;
-    padding-top: 2vmin;
+    padding-top: 1vmin;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 1vmin;
@@ -161,22 +210,26 @@ main .contenedorObjetivos ol{
 
 main .contenedorObjetivos ol li{
     background-color: white;
-    font-size: 2vmin;
+    font-size: 4vmin;
     margin: 0vmin auto 1vmin auto;
     border-radius: 0.5vmin;
-    padding: 1.4vmin;
+    padding: 1vmin;
     width: 90%;
-    color: rgb(255, 199, 0);
     font-size: 3.5vmin;
     border: solid 1px rgb(200,200,200);
     transition: 0.5s;
 
 }
 
+main .contenedorObjetivos ol li::marker{
+    color: rgb(255, 199, 0);
+}
+
 main .contenedorObjetivos ol li span{
-    font-size: 1.7vmin;
+    font-size: 1.9vmin;
     color: black;
     display: block;
+    margin-top:-1.5vmin;
 }
 
 main .contenedorObjetivos ol li:hover{
@@ -255,7 +308,7 @@ main .contenedorPersonaEquipo:hover .contenedorDescripcionPersonaEquipo{
 }
 
 
-/*Pagina noticias*/
+/*main Pagina noticias*/
 
 main .contenedorSeccionesNoticias{
     display: grid;
@@ -264,7 +317,7 @@ main .contenedorSeccionesNoticias{
 main .seccion{
     border:2px solid rgb(200,200,200);
     background-color: rgb(255,255,255);
-    height: 40vh;
+    height: 40vmin;
     text-align: center;
     padding-top: 8vmin;
 }
@@ -295,6 +348,102 @@ main .seccion a:hover{
     font-size: 2.7vmin;
 }
 
+/*main Pagina tendencias*/
 
+main .contenedorTendendias ol{
+    padding: 1vmin 0vmin 4vmin 7vmin;
+}
+main .contenedorTendendias ol li::marker{
+    color: rgb(255, 199, 0);
+    font-size: 6vmin;
+}
+
+/*main Pagina seccion*/
+main .contenedorCabeceraSeccion{
+    border: 2px solid rgb(200,200,200);
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+}
+
+main .contenedorNoticiaPrincipalSeccion{
+    height: 35vmin;
+    position: relative;
+    border: 2px solid rgb(200,200,200);
+}
+
+main .contenedorNoticiasSecundariasSeccion{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+main .contenedorNoticiaSecundariaSeccion{
+    position: relative;
+    border: 2px solid rgb(200,200,200);
+    height: 16vmin;
+    transition: 1s;
+}
+
+main .spanFondoSeccionNoticia{
+    position: absolute;
+    color: black;
+    opacity: 0.08;
+}
+
+main .spanNumero1{
+    font-size: 22vmin;
+}
+
+main .spanNumero2{
+    font-size: 12vmin;
+}
+
+main .contenedorDescripcionyTituloNoticia{
+    padding-top: 1vmin;
+    text-align: center;
+    position: relative;
+    font-size: 1.5vmin;
+}
+
+main .contenedorDescripcionNoticia{
+    width: 100%;
+    height: 8vmin;
+    overflow-y: scroll;
+    padding-top: 0px;
+}
+
+main .contenedorDescripcionNoticia p{
+    margin: 1vmin 1vmin;
+}
+
+main .descripcionNoticia a{
+    display: block;
+    margin-top: 1vmin;
+    color: black;
+}
+
+main .contenedorNoticiasDeUltimaHoraEnSeccion{
+    margin: 2vmin 0px;
+}
+
+main .gridNoticiasModoPequeño{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2vmin;
+}
+main .noticiaModoPequeño{
+    height: 65vmin;
+    background-color: white;
+    border: solid 2px rgb(200,200,200);
+    padding: 1vmin;
+    font-size: 3vmin;
+}
+
+main .descripcionNoticiaModoPequeño{
+    height: 30vmin;
+    overflow-y:auto;
+    margin-top: 1vmin;
+    font-size: 1.8vmin;
+}
 
 
